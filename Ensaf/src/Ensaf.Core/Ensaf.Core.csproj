@@ -17,4 +17,8 @@
     <ProjectReference Include="..\Ensaf.SharedKernel\Ensaf.SharedKernel.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="PostAggregate\Specifications\" />
+  </ItemGroup>
+
 </Project>

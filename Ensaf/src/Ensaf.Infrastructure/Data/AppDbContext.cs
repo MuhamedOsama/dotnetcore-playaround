@@ -1,4 +1,5 @@
 ﻿using Ardalis.EFCore.Extensions;
+using Ensaf.Core.PostAggregate;
 using Ensaf.Core.ProjectAggregate;
 using Ensaf.SharedKernel;
 using MediatR;
@@ -25,6 +26,8 @@ namespace Ensaf.Infrastructure.Data
 
         public DbSet<ToDoItem> ToDoItems { get; set; }
         public DbSet<Project> Projects { get; set; }
+        public DbSet<Post> Posts{ get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
